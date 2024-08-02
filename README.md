@@ -2,6 +2,8 @@
 
 Welcome to the Inversity Front-End Template! This repository is your starting point for building apps using the Inversity layout, theme and styling. It includes all the essential files and configurations to get your front-end layout up and running smoothly.
 
+![image](https://github.com/user-attachments/assets/7cd49137-31fe-45dd-8b29-1c424fa1bf09)
+
 ## Layout of the /WebUI Directory
 
 The `/WebUI` directory is where all the magic happens. Here's a quick tour of what's inside:
