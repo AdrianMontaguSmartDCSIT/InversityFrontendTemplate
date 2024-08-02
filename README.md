@@ -25,17 +25,12 @@ To get the project up and running with Docker Compose, follow these simple steps
 
 1. **Make sure Docker and Docker Compose are installed** on your machine. You can grab them from [Docker's official website](https://www.docker.com/).
 
-2. **Navigate to the project directory**:
-    ```sh
-    cd /path/to/inversity-front-end-template
-    ```
-
-3. **Build and start the containers**:
+2. **Build and start the containers (run this at the top level of the repo)**:
     ```sh
     docker-compose up --build
     ```
 
-4. **Access the application**: 
+3. **Access the application**: 
     Fire up your web browser and head over to `http://localhost:5173` to see your site in action.
 
 ## Stopping the Project
