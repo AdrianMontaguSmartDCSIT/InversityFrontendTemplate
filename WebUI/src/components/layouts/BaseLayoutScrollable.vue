@@ -13,7 +13,7 @@ import Footer from "@/components/navAndBanners/Footer.vue";
     <div class="promotional-banner-wrapper"></div>
     <!--Main-->
     <div class="main-content">
-      <slot> </slot>
+      <slot></slot>
     </div>
     <div class="footer">
       <Footer />

@@ -3,10 +3,9 @@
         <v-menu :location="menuLocation">
             <template v-slot:activator="{ props }">
                 <p v-bind="props" class="dropdown-text">
-                    Our Solutions
+                    Our Offers
                 </p>
             </template>
-
             <v-list>
                 <v-list-item v-for="(item, index) in filteredDropdownLinks" :key="index" class="dropdown-item">
                     <v-list-item-title>
