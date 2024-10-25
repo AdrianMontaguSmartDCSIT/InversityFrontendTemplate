@@ -12,6 +12,7 @@ const router = createRouter({
     {
       // Homepage
       path: "/",
+      alias: "/educators",
       name: "home",
       component: HomeView,
       meta: {

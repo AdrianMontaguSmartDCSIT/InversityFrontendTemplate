@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BaseLayoutScrollable from "@/components/layouts/BaseLayoutScrollable.vue";
 /*
 Our top level App.vue component is the entry point for our Vue application. It is the parent component that wraps all other components in the application.
 It is also the component where we define the router view that will render the components for the different routes in our application.
@@ -8,9 +9,13 @@ Look at the views in the /src/views folder to see the components that will be re
 </script>
 
 <template>
-  <RouterView v-slot="{ Component }">
-    <component :is="Component" :key="$route.path + $route.params"></component>
-  </RouterView>
+  <BaseLayoutScrollable>
+    <VMain>
+      <RouterView v-slot="{ Component }">
+        <component :is="Component" :key="$route.path + $route.params"></component>
+      </RouterView>
+    </VMain>
+  </BaseLayoutScrollable>
 </template>
 
 <style lang="scss"></style>

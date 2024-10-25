@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
+import NavigationDropDown from './NavigationDropDown.vue';
 
 const router = useRouter();
 </script>
@@ -11,12 +12,11 @@ const router = useRouter();
       <img src="/images/full_logo.svg" alt="inversity logo" />
     </div>
     <div class="middle-spacer"></div>
-    <div class="navbar-actions">
-      <v-icon color="membership" @click="() => { }">mdi-account</v-icon>
-      <span @click="() => { }" class="link-text" to="/profile">Hi User!</span>
+    <div class="navbar-actions d-none d-md-flex d-md-block">
+       <NavigationDropDown/>
       <v-btn color="secondary" class="login-button">
         <span class="login-text">
-          Logout
+          Login
         </span>
       </v-btn>
     </div>
