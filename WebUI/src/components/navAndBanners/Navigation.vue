@@ -34,6 +34,7 @@ const router = useRouter();
   height: $navbar-height-desktop;
   display: flex;
   align-items: center;
+  position: fixed;
 }
 
 .logo-link {

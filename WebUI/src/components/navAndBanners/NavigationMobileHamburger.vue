@@ -1,6 +1,7 @@
 <template v-slot:prepend>
     <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-    <v-navigation-drawer v-model="drawer" location="right" temporary>
+    <v-navigation-drawer v-model="drawer" location="right" temporary 
+    class="navigation-drawer">
         <v-list-subheader class="d-flex justify-end">
             <v-icon icon="mdi-close" size="large" @click="drawer = !drawer"></v-icon>
         </v-list-subheader>
@@ -28,4 +29,8 @@ const items = ref([
 
 </script>
 
-<style scoped></style>
+<style lang="scss">
+.navigation-drawer {
+    z-index: 1000;
+}
+</style>

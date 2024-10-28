@@ -4,13 +4,6 @@
             <v-sheet height="100%">
                 <div class="d-flex fill-height justify-center align-center">
                     <v-img :src="image" class="carousel-image">
-                        <div v-if="getChallenge === 1" style="position: absolute; top: 10px; right: 10px; z-index: 10;"
-                            class="d-flex align-center">
-                            <v-icon class="live-badge">
-                                mdi-circle
-                            </v-icon>
-                            <p class="live-badge px-2"><strong>LIVE</strong></p>
-                        </div>
                     </v-img>
                 </div>
             </v-sheet>
@@ -42,7 +35,7 @@
 
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, Ref } from 'vue';
 import ftPhoto from '@/assets/images/challenge_financial_times.webp';
 import hackathonPhoto from '@/assets/images/challenge_hackathon.webp';
 import nestaPhoto from '@/assets/images/challenge_nesta.webp';
@@ -50,14 +43,15 @@ import nestaPhoto from '@/assets/images/challenge_nesta.webp';
 // const challenges = ref(1);
 const images = [nestaPhoto, ftPhoto, hackathonPhoto];
 
-const tab = ref("two")
+const tab: Ref<'one' | 'two' | 'three'> = ref("two")
 
 const getChallenge = computed(() => {
     const tabMapping = {
-        one: 0,
-        two: 1,
+        "one": 0,
+        "two": 1,
+        "three": 2
     };
-    return tabMapping[tab.value] ?? 2;
+    return tabMapping[tab.value];
 });
 
 </script>

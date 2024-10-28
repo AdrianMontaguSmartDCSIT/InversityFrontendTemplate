@@ -28,6 +28,7 @@ import { RouterLink } from "vue-router";
   display: flex;
   flex-direction: row;
   align-items: center;
+  // position: relative;
 }
 
 .copyright-message {

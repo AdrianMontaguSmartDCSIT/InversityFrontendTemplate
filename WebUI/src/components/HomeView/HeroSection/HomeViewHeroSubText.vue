@@ -1,10 +1,13 @@
 <template>
-    <v-row>
+    <v-row class="pt-3">
         <v-col cols=12>
-            <p class="py-4">Our hands-on AI Masterclass and real-world challenges empower students with essential,
+            <p>Our hands-on AI Masterclass and real-world challenges empower students with essential,
                 future-ready
                 skills to tackle tomorrow's biggest opportunities.</p>
         </v-col>
+    </v-row>
+    <v-row class="d-none d-md-block py-1 py-md-5 d-md-flex flex-md-column">
+        <HomeViewHeroStats />
     </v-row>
     <v-row class="d-flex justify-center">
         <v-col cols="11" md="6" class="d-flex justify-center">
@@ -17,6 +20,7 @@
 </template>
 
 <script setup lang="ts">
+import HomeViewHeroStats from './HomeViewHeroStats.vue';
 
 </script>
 
