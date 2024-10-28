@@ -1,11 +1,11 @@
 <template>
-    <v-container class="px-14 px-m-2 container">
+    <v-container class="px-4 px-m-2 px-m-2 container">
         <HomeViewHero />
     </v-container>
 </template>
 
 <script setup lang="ts">
-import HomeViewHero from "@/components/HomeView/HomeViewHero.vue";
+import HomeViewHero from "@/components/HomeView/HeroSection/HomeViewHero.vue";
 
 </script>
 

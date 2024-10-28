@@ -18,7 +18,7 @@ directives = await import('vuetify/directives')
 const inversityTheme = {
   dark: false,
   colors: {
-    background: '#FFFFFF',
+    background: '#f7fafc',
     surface: '#F8F8F8',
     'surface-darken-1': '#F0F0F0',
     primary: '#091B2D',
@@ -50,8 +50,8 @@ export default createVuetify({
   },
   defaults: {
     VBtn: {
-      class: 'text-none',
-      rounded: true
+      class: 'text-none'
+      // rounded: true
     }
   }
 })

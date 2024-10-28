@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
 import NavigationDropDown from './NavigationDropDown.vue';
+import NavigationMobileHamburger from './NavigationMobileHamburger.vue';
 
 const router = useRouter();
 </script>
@@ -13,12 +14,15 @@ const router = useRouter();
     </div>
     <div class="middle-spacer"></div>
     <div class="navbar-actions d-none d-md-flex d-md-block">
-       <NavigationDropDown/>
+      <NavigationDropDown />
       <v-btn color="secondary" class="login-button">
         <span class="login-text">
           Login
         </span>
       </v-btn>
+    </div>
+    <div class="d-md-none">
+      <NavigationMobileHamburger />
     </div>
     <div class="end-spacer"></div>
   </div>

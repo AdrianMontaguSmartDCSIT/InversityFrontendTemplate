@@ -1,8 +1,8 @@
 <template>
     <div class="align-center">
-        <h1 class="hero-text">Equip Your Students for the AI-Powered Future</h1>
+        <h1 class="hero-text">Build Future Leaders with Practical AI Skills</h1>
     </div>
-    <div class="d-none d-md-block">
+    <div>
         <HeroViewSubText />
     </div>
 </template>
@@ -23,7 +23,7 @@ import HeroViewSubText from './HomeViewHeroSubText.vue';
 
 @media screen and (max-width: $breakpoint-md) {
     .hero-text {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         line-height: 1.2;
     }
 }
